@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Properties\launchSettings_old.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\launchSettings.json" />
+    <_WebToolingArtifacts Remove="Properties\launchSettings_old.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\fonts\DejaVuSans-Bold-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSans-BoldOblique-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSans-Oblique-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSans-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSansCondensed-Bold-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSansCondensed-BoldOblique-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSansCondensed-Oblique-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DejaVuSansCondensed-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DroidSerif-Bold-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DroidSerif-BoldItalic-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DroidSerif-Italic-webfont.svg" />
+    <None Include="wwwroot\css\fonts\DroidSerif-Regular-webfont.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+    <PackageReference Include="Rezolver.Microsoft.AspNetCore.Hosting" Version="2.3.0" />
+  </ItemGroup>
+
+</Project>
